@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Search Results</h1>
+    {% if object_list %}
+       <table class="table">
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>License number</th>
+          </tr>
+       {% for driver in object_list %}
+          <tr>
+            <td>{{ driver.id }}</td>
+            <td><a href="{{ driver.get_absolute_url }}">{{ driver.username }} {% if user == driver %} (Me){% endif %}</a></td>
+            <td>{{ driver.first_name }}</td>
+            <td>{{ driver.last_name }}</td>
+            <td>{{ driver.license_number }}</td>
+          </tr>
+           {% endfor %}
+         </table>
+    {% else %}
+        <br>
+          <h3>No drivers found!</h3>
+    {% endif %}
+    <br>
+    <a class="btn btn-primary" href="{% url 'taxi:driver-list'%}" role="button">
+    Back
+    </a>
+{% endblock %}
