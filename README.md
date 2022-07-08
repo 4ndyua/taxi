@@ -4,7 +4,10 @@ Django project for managing drivers, cars and manufacturers in Taxi Service
 
 ## Check it out
 
-URL
+https://andytaxi.herokuapp.com/
+
+- admin
+- 12345
 
 ## Installation
 
