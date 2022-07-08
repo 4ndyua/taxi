@@ -1,3 +1,8 @@
 body {
     margin-top: 20px;
+    background-color: #e6ffff;
+    font-family: 'Cabin', sans-serif;
+}
+sidebar-nav{
+    font-family: 'Cabin', sans-serif;
 }

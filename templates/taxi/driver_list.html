@@ -8,13 +8,13 @@
       </a>
     </h1>
 
-    <form action="{% url 'taxi:drivers-search-results' %}" method="get">
-        <label> Search by Name, Surname, Nickname
-            <input name="q" type="text" placeholder="Search driver...">
-            <input class="btn btn-primary" type="submit" value="Find">
+    <form action="{% url 'taxi:drivers-search-results' %}" method="get" class="form-inline">
+        <label>
+            <input class="form-control mr-sm-2" name="q" type="search" placeholder="Search driver...">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </label>
     </form>
-
+    <br>
     {% if driver_list %}
     <table class="table">
       <tr>
@@ -31,6 +31,12 @@
         <td>{{ driver.first_name }}</td>
         <td>{{ driver.last_name }}</td>
         <td>{{ driver.license_number }}</td>
+        <td><a class="btn btn-primary" href="{% url 'taxi:driver-license-update' pk=driver.pk %}" role="button">
+    Update License
+  </a></td>
+        <td><a class="btn btn-danger" href="{% url 'taxi:driver-delete' pk=driver.pk %}" role="button">
+    Delete
+  </a></td>
       </tr>
     {% endfor %}
     </table>
