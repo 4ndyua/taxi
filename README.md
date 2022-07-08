@@ -1,14 +1,14 @@
-##Taxi Service Project
+## Taxi Service Project
 
 Django project for managing drivers, cars and manufacturers in Taxi Service
 
-##Check it out
+## Check it out
 
 URL
 
-##Installation
+## Installation
 
--Python3 must be already installed
+- Python3 must be already installed
 
 git clone https://github.com/4ndyua/taxi
 
@@ -24,13 +24,13 @@ python3 manage.py migrate
 
 python manage.py runserver
 
-##Features
+## Features
 
--Authentication functionality for Driver/User
--Managing drivers, cars and manufacturers using crud operations from website
--Powerful admin panel for advanced managing
+- Authentication functionality for Driver/User
+- Managing drivers, cars and manufacturers using crud operations from website
+- Powerful admin panel for advanced managing
 
-DEMO
+## DEMO
 
 SCREENSHOT
 
