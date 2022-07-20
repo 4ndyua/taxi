@@ -38,3 +38,7 @@ python manage.py runserver
 ## DEMO
 
 ![demo](demo.png)
+![demo2](demo2.png)
+![demo3](demo3.png)
+![demo4](demo4.png)
+![demo5](demo5.png)
