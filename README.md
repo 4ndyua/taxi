@@ -6,8 +6,8 @@ Django project for managing drivers, cars and manufacturers in Taxi Service
 
 https://andytaxi.herokuapp.com/
 
-- admin
-- 12345
+- Login: admin
+- Password: 12345
 
 ## Installation
 ```
