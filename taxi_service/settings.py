@@ -21,14 +21,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
+SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 # SECURITY WARNING: don"t run with debug turned on in production!
 
-#DEBUG = True
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+# DEBUG = True
+DEBUG = bool(os.environ.get("DJANGO_DEBUG", True))
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'andytaxi.herokuapp.com']
+ALLOWED_HOSTS = ["127.0.0.1", "andytaxi.herokuapp.com"]
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -102,7 +102,7 @@ DATABASES["default"].update(db_from_env)
 
 AUTH_USER_MODEL = "taxi.Driver"
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = "/"
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
@@ -124,7 +124,6 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = (BASE_DIR / "static",)
 
 STATIC_ROOT = "staticfiles/"
-
 
 
 # Default primary key field type

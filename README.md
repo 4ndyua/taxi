@@ -10,8 +10,9 @@ https://andytaxi.herokuapp.com/
 - 12345
 
 ## Installation
+```
 
-- Python3 must be already installed
+Python3 must be already installed
 
 git clone https://github.com/4ndyua/taxi
 
@@ -26,6 +27,7 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 
 python manage.py runserver
+```
 
 ## Features
 

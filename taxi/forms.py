@@ -30,19 +30,21 @@ class CarForm(forms.ModelForm):
 class DriverCreationForm(UserCreationForm):
     license_number = forms.CharField(
         validators=[clean_license_number],
-        )
+    )
 
     class Meta(UserCreationForm.Meta):
         model = Driver
         fields = UserCreationForm.Meta.fields + (
-            "first_name", "last_name", "license_number",
+            "first_name",
+            "last_name",
+            "license_number",
         )
 
 
 class LicenseUpdateForm(forms.ModelForm):
     license_number = forms.CharField(
         validators=[clean_license_number],
-        )
+    )
 
     class Meta:
         model = Driver

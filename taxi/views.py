@@ -120,7 +120,7 @@ class DriverDeleteView(LoginRequiredMixin, generic.DeleteView):
 
 class SearchResultsView(LoginRequiredMixin, generic.ListView):
     model = Driver
-    template_name = 'taxi/driver_search_results.html'
+    template_name = "taxi/driver_search_results.html"
 
     def get_queryset(self):
         query = self.request.GET.get("q")

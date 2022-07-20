@@ -29,7 +29,7 @@ class AdminSiteTests(TestCase):
             "Additional info",
             "first_name",
             "last_name",
-            "license_number"
+            "license_number",
         )
         for part_to_check in check_if_exist:
             self.assertContains(result, part_to_check)
