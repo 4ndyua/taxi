@@ -11,21 +11,13 @@ https://andytaxi.herokuapp.com/
 
 ## Installation
 ```
-
 Python3 must be already installed
-
 git clone https://github.com/4ndyua/taxi
-
 python3 -m venv venv
-
 source venv/bin/activate on Mac OS or venv\Scripts\activate on Windows
-
 pip install -r requirements.txt
-
 python3 manage.py makemigrations
-
 python3 manage.py migrate
-
 python manage.py runserver
 ```
 
