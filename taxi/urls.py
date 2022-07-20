@@ -2,7 +2,7 @@ from django.urls import path
 
 from .views import index, CarListView, CarDetailView, DriverListView, DriverDetailView, ManufacturerListView, \
     ManufacturerCreateView, ManufacturerUpdateView, ManufacturerDeleteView, CarCreateView, CarUpdateView, CarDeleteView, \
-    DriverCreateView, DriverLicenseUpdateView, DriverDeleteView, assign, SearchResultsView
+    DriverCreateView, DriverLicenseUpdateView, DriverDeleteView, assign, SearchResultsView, ManufacturerDetailView
 
 urlpatterns = [
     path("", index, name="index"),
@@ -23,6 +23,7 @@ urlpatterns = [
     path("drivers/<int:pk>/license-update/", DriverLicenseUpdateView.as_view(), name="driver-license-update"),
     path("drivers/<int:pk>/delete/", DriverDeleteView.as_view(), name="driver-delete"),
     path("drivers/search/", SearchResultsView.as_view(), name="drivers-search-results"),
+    path("manufacturer/<int:pk>/", ManufacturerDetailView.as_view(), name='manufacturer-detail')
 ]
 
 app_name = "taxi"

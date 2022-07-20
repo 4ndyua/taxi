@@ -23,7 +23,7 @@
                   {{ manufacturer.id }}
               </td>
               <td>
-                  {{ manufacturer.name }}
+                  <a href="{% url 'taxi:manufacturer-detail' pk=manufacturer.id %}">{{ manufacturer.name }}</a>
               </td>
               <td>
                   {{ manufacturer.country }}

@@ -35,4 +35,4 @@ python manage.py runserver
 
 ## DEMO
 
-![demo](https://i.ibb.co/QjmBvH1/Screenshot.png)
+![demo](demo.png)

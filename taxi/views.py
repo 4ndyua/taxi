@@ -129,3 +129,7 @@ class SearchResultsView(LoginRequiredMixin, generic.ListView):
             | Q(last_name__icontains=query)
             | Q(username__icontains=query)
         )
+
+
+class ManufacturerDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Manufacturer
