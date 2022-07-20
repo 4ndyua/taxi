@@ -8,5 +8,8 @@
     {{ form|crispy }}
       <br>
     <input class="btn btn-primary" type="submit" value="Submit">
+    <a class="btn btn-dark" href="{% url 'taxi:driver-list' %}" role="button">
+        Back to Driver list
+        </a>
   </form>
 {% endblock %}
